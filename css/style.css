@@ -1,0 +1,230 @@
+@charset 'utf-8';
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(202, 227, 220);
+}
+section {
+  width: 400px;
+  padding: 30px;
+  background-color: aliceblue;
+  margin: 50px auto;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+section article.profile {
+  width: 100%;
+  text-align: center;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container img {
+  width: 60%;
+  height: 60%;
+  border-radius: 10%;
+  margin-bottom: 20px;
+  box-shadow: 5px 15px 30px rgb(84, 84, 112);
+  transform: rotateY(0deg);
+  transition: transform 1s, opacity 1s;
+}
+
+.hover-text {
+  width: 300px;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.image-container:hover img {
+  opacity: 20%;
+}
+
+.image-container:hover .hover-text {
+  display: block;
+}
+
+section article.profile h4 {
+  font-weight: bold;
+  font-size: 30px;
+  font-family: "arial";
+  color: black;
+  margin-bottom: 7px;
+}
+
+section article.profile h1 {
+  font-weight: bold;
+  font-size: medium;
+  font-family: "arial";
+  color: black;
+  margin-bottom: 7px;
+}
+
+section article.profile h2 {
+  font-weight: bold;
+  font-size: small;
+  font-family: "arial";
+  color: #3d3838;
+  margin-bottom: 7px;
+}
+
+section article.profile h3 {
+  font-weight: bold;
+  font-size: small;
+  font-family: "arial";
+  color: #3d3838;
+  margin-bottom: 30px;
+}
+
+.contact {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.contact h1 {
+  font-weight: bold;
+  font-size: medium;
+  font-family: "arial";
+  color: black;
+  margin-bottom: 10px;
+}
+
+.contact h2 {
+  font-size: small;
+  font-family: "arial";
+  color: black;
+  margin-bottom: 5px;
+}
+
+.addname {
+  width: 50vw;
+  margin: 20px auto;
+  padding: 0px 20px 20px 20px;
+  background: aliceblue;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+article.add {
+  width: 100%;
+}
+
+.input_container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.addname h1 {
+  font-weight: bold;
+  font-size: 30px;
+  font-family: "arial";
+  text-align: center;
+  color: black;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.name_input {
+  width: 20%;
+  height: 30px;
+  font-size: 15px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.text_input {
+  width: 37vw;
+  height: 30px;
+  font-size: 15px;
+  margin-bottom: 10px;
+  padding: 5px;
+  word-wrap: break-word;
+}
+
+.name_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.example {
+  background-color: rgb(227, 255, 244);
+  padding: 5px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  word-wrap: break-word;
+}
+
+.example h1 {
+  font-size: 20px;
+  text-align: justify;
+}
+
+.example h2 {
+  font-size: medium;
+  padding: 5px;
+}
+
+.deletebtn {
+  display: none;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 30%;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.example:hover .deletebtn {
+  display: block;
+  background-color: #e60000;
+  transform: scale(1.1);
+}
+
+.submit_btn {
+  width: 12%;
+  height: 30px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  padding: 5px 10px;
+  background-color: #4CAF50; 
+  color: white; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.submit_btn:hover {
+  background-color: #45a049; 
+  transform: scale(1.05); 
+}
+
+.submit_btn:active {
+  background-color: #3e8e41; 
+  transform: scale(1); 
+}
